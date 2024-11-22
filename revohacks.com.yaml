@@ -1,0 +1,81 @@
+---
+? ''
+: - octodns:
+      cloudflare:
+        auto-ttl: true
+        proxied: true
+    ttl: 300
+    type: ALIAS
+    value: revolution-a5e.pages.dev.
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+        comment: Google Workspace
+    ttl: 300
+    type: MX
+    value:
+      exchange: aspmx.l.google.com.
+      preference: 1
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: TXT
+    values:
+    - google-site-verification=mlNMlOOicRDWRTg78GZE3ZG3jMNHC7lc-NlWOqwiriM
+    - v=spf1 include:_spf.google.com ~all
+20241018185250pm._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      comment: DKIM for Postmark
+  ttl: 300
+  type: TXT
+  value: k=rsa\;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJkGkYIsDlpCpDpMVGz4oAA9lK18X/YswfpzcM10/96LjGDL4Cg1wOufj8F50KZgjuqa+tbrKhAcypXUuQGVwipOMFy91n8mtHhhOVhyET9a7CYw5hp7bYAR/7l8mgg+6mx5J45dHEPDhQfbDltVjsrSn6nlgEzqhReFQRSbwzjQIDAQAB
+_atproto:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      comment: Bluesky
+  ttl: 300
+  type: TXT
+  value: did=did:plc:znhoxmkkcx3sqih2fkqaos6z
+_dmarc:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      comment: DMARC policy
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=reject\; rua=mailto:dmarc@revohacks.com\; ruf=mailto:dmarc@revohacks.com\;
+    sp=reject\; aspf=s\; adkim=s\; fo=0\;
+_gh-revolution-hacks-o:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      comment: GitHub verification
+  ttl: 300
+  type: TXT
+  value: f498c2c733
+mail-return-path:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: pm.mtasv.net.
+mfa:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: cname.vercel-dns.com.
+www:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+      proxied: true
+  ttl: 300
+  type: A
+  value: 192.0.2.1
