@@ -47,8 +47,7 @@ _dmarc:
       comment: DMARC policy
   ttl: 300
   type: TXT
-  value: v=DMARC1\; p=reject\; rua=mailto:dmarc@revohacks.com\; ruf=mailto:dmarc@revohacks.com\;
-    sp=reject\; aspf=s\; adkim=s\; fo=0\;
+  value: v=DMARC1\; p=none\; rua=mailto:dmarc@revohacks.com
 _gh-revolution-hacks-o:
   octodns:
     cloudflare:
