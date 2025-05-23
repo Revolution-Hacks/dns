@@ -70,14 +70,6 @@ mfa:
   ttl: 300
   type: CNAME
   value: cname.vercel-dns.com.
-signatures:
-  octodns:
-    cloudflare:
-      auto-ttl: true
-      proxied: true
-  ttl: 300
-  type: CNAME
-  value: f7ae7dfa-7887-4e05-8281-56ad627304b6.cfargotunnel.com.
 www:
   octodns:
     cloudflare:
